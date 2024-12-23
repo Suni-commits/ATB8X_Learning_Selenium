@@ -18,6 +18,7 @@ public class Selenium02 {
         WebDriver driver=new EdgeDriver(edgeOptions);
         driver.get("https://www.google.com/");
         System.out.println(driver.getTitle());
+        driver.quit();
 
     }
 }
