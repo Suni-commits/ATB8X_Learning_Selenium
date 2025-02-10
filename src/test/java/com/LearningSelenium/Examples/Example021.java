@@ -33,7 +33,7 @@ public class Example021 {
         String parentWindowHandle = driver.getWindowHandle();
         System.out.println("Parent -> " + parentWindowHandle);
 
-        List<WebElement> list_heatmaps = driver.findElements(By.cssSelector("[data-qa=\"yedexafobi\"]"));
+        List<WebElement> list_heatmaps = driver.findElements(By.cssSelector("//div[@data-qa='yedexafobi']"));
 
         Actions actions  = new Actions(driver);
         actions.moveToElement(list_heatmaps.get(1)).click().build().perform();
@@ -41,7 +41,7 @@ public class Example021 {
         Thread.sleep(13000);
 
         Set<String> allHandles = driver.getWindowHandles();
-        System.out.println("All Window Handles: " + allHandles);
+        System.out.println("All Window Handles: " + allHandles) ;
 
 
         for(String handle: allHandles){
