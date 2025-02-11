@@ -32,7 +32,7 @@ public class WindowsHandlingexample {
                 driver.switchTo().window(windowhandle);
                 driver.switchTo().frame("heatmap-iframe");
 
-                WebElement clickmap=driver.findElement(By.xpath("//div[@data-qa='voferojeve']"));
+                WebElement clickmap=driver.findElement(By.xpath("//span[@data-qa='refoyekife']"));
                 clickmap.click();
             }
         }
